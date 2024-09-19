@@ -51,7 +51,8 @@ struct responseRoute
 class WebServer
 {
 public:
-    std::string user_agent_str = "subconverter/" VERSION " cURL/" LIBCURL_VERSION;
+    // std::string user_agent_str = "subconverter/" VERSION " cURL/" LIBCURL_VERSION;
+    std::string user_agent_str = "";
     std::atomic_bool SERVER_EXIT_FLAG{false};
 
     // file server
